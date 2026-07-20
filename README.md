@@ -35,7 +35,7 @@ This article does not introduce a new pattern; it identifies a shared architectu
 This isn't a new idea, and it's worth naming its ancestors up front rather than hoping nobody notices the resemblance:
 - **Facade** (Gamma, Helm, Johnson, Vlissides — *Design Patterns*, 1994) gives a subsystem one simplified interface instead of many entry points.
 - **Mediator** (same book) goes further: it explicitly forbids colleagues from referencing each other directly, forcing all interaction through a central object. The "no Service A ↔ Service C" rule is Mediator's core idea, applied at service/module granularity instead of object granularity.
-- **API Gateway** (widely documented by Chris Richardson and others in the microservices literature) is the same shape applied to client-facing traffic — one door, centralized auth/logging/routing, many services behind it.
+- **API Gateway** (widely documented by Chris Richardson[^2] and others in the microservices literature) is the same shape applied to client-facing traffic — one door, centralized auth/logging/routing, many services behind it.
 - **Enterprise Service Bus** is what this idea became at enterprise scale in 2000s SOA — a central bus that every integration flowed through.
 
 None of that is a criticism of the rule. It's context. A reader who knows these patterns will recognize the shape immediately, and pretending otherwise is the fastest way to lose their trust.
@@ -62,7 +62,7 @@ This is the part that's usually left out, and it's the part that actually matter
 
 **Latency.** A → Gateway/Mediator → C is strictly slower than A → C. If Service A and Service C are on a hot path — something latency-sensitive, called at high frequency — that extra hop isn't free. In many cloud-based microservice deployments, an additional network hop may add roughly 5–10 ms of latency, depending on the infrastructure, network conditions, and deployment topology. For most business applications this overhead is negligible, but on high-throughput or latency-sensitive paths it can accumulate into measurable P99 latency. Pretending the cost does not exist turns "architectural discipline" into "unexplained P99 regression" six months later.
 
-**Centralization risk.** The shared boundary now sits on every path in the system. If it goes down, misconfigures, or gets slow, everything downstream feels it. This is exactly the criticism that ended the ESB's dominance: Martin Fowler and James Lewis's microservices writing argued for "smart endpoints, dumb pipes" — pushing logic and direct communication out to the edges rather than concentrating it in one bus, precisely because a central hub becomes both a bottleneck and a single point of failure as a system grows.
+**Centralization risk.** The shared boundary now sits on every path in the system. If it goes down, misconfigures, or gets slow, everything downstream feels it. This is exactly the criticism that ended the ESB's dominance: Martin Fowler and James Lewis's microservices writing argued for "smart endpoints, dumb pipes"[^1] — pushing logic and direct communication out to the edges rather than concentrating it in one bus, precisely because a central hub becomes both a bottleneck and a single point of failure as a system grows.
 
 **A rule applied past its usefulness.** If the boundary accumulates business logic beyond auth/logging/routing, it stops being a thin door and starts being a monolith with extra steps — the exact coupling problem the rule was meant to prevent, just relocated.
 
