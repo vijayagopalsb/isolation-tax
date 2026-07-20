@@ -84,4 +84,7 @@ Not "always," not "never." A concrete way to decide:
 ## Verdict
 
 Lateral isolation isn't free, and it isn't a default. It's a tax you choose to pay for auditability and decoupling, and like any tax, it's worth it exactly when what you're protecting is worth more than the hop it costs you. Name the pattern you're actually using, be honest about the latency and centralization price, and make the call boundary-by-boundary rather than as a blanket rule. That's the whole discipline — everything else is implementation detail.
- 
+
+[^1]: James Lewis and Martin Fowler, "Microservices" (2014), https://martinfowler.com/articles/microservices.html
+
+[^2]: Chris Richardson, "Pattern: API Gateway / Backends for Frontends," microservices.io, https://microservices.io/patterns/apigateway.html
