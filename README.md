@@ -88,3 +88,4 @@ Lateral isolation isn't free, and it isn't a default. It's a tax you choose to p
 [^1]: James Lewis and Martin Fowler, "Microservices" (2014), https://martinfowler.com/articles/microservices.html
 
 [^2]: Chris Richardson, "Pattern: API Gateway / Backends for Frontends," microservices.io, https://microservices.io/patterns/apigateway.html
+
