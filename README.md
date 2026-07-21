@@ -1,5 +1,5 @@
 # isolation-tax
-An architectural principle on when to enforce lateral isolation between peer services
+A discipline for deciding when to enforce lateral isolation between peer services — with runnable code and an ArchUnit test proving it.
 
 ![Header illustration](images/illustration.png)
 
@@ -7,6 +7,9 @@ An architectural principle on when to enforce lateral isolation between peer ser
 > Spring Boot project that runs the "Dependency Sprawl" example below both ways — `OrderService`
 > calling every peer directly vs. routed through a single `ServiceGateway` — and returns the
 > resulting call graph as JSON so the "N vs. one door" claim is something you can hit with curl.
+> **Want the rule enforced, not just demonstrated?** [`demo-archunit/`](demo-archunit/) is a second,
+> smaller companion: Service A, Service B, and Service C, isolated the way the article describes,
+> with an ArchUnit test that fails the build the moment any two of them depend on each other directly.
 
 ## Temptation
 
@@ -21,8 +24,7 @@ whether to take the shortcut.
 
 ## Lateral Isolation
 
-Lateral Isolation is the architectural principle of preventing direct communication between peer components 
-by requiring all interactions to pass through a controlled boundary.
+In this article, I'll call this discipline Lateral Isolation: preventing direct communication between peer components by requiring all interactions to pass through a controlled boundary.
 
 ![Direct peer-to-peer communication without lateral isolation](images/direct-peer-to-peer.png)
 
@@ -35,7 +37,7 @@ by requiring all interactions to pass through a controlled boundary.
 
 ## Naming the rule
 
-This article does not introduce a new pattern; it identifies a shared architectural principle behind existing patterns. The discipline is simple to state: every path runs through one door. No service (or module) calls another laterally; everything is routed through a shared entry point that owns cross-cutting concerns — authentication, logging, routing — and nothing else talks around it.
+This article does not introduce a new pattern or principle. It applies two existing ones — Information Hiding and the Acyclic Dependencies Principle — more strictly than usual, using patterns that already have names. The discipline is simple to state: every path runs through one door. No service (or module) calls another laterally; everything is routed through a shared entry point that owns cross-cutting concerns — authentication, logging, routing — and nothing else talks around it.
 
 This isn't a new idea, and it's worth naming its ancestors up front rather than hoping nobody notices the resemblance:
 - **Facade** (Gamma, Helm, Johnson, Vlissides — *Design Patterns*, 1994) gives a subsystem one simplified interface instead of many entry points.
