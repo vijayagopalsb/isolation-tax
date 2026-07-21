@@ -4,13 +4,13 @@ import com.isolationtax.demo.door.ServiceEndpoint;
 import org.springframework.stereotype.Component;
 
 // Violation
-import com.isolationtax.demo.services.c.ServiceC;
+// import com.isolationtax.demo.services.c.ServiceC;
 
 @Component
 class ServiceA implements ServiceEndpoint {
 
     // Violation test
-    ServiceC serviceC;
+    // ServiceC serviceC;
 
     @Override
     public String serviceId() {
