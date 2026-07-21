@@ -3,6 +3,11 @@ An architectural principle on when to enforce lateral isolation between peer ser
 
 ![Header illustration](images/illustration.png)
 
+> **Want to see the shape of this, not just read about it?** [`demo-app/`](demo-app/) is a small
+> Spring Boot project that runs the "Dependency Sprawl" example below both ways — `OrderService`
+> calling every peer directly vs. routed through a single `ServiceGateway` — and returns the
+> resulting call graph as JSON so the "N vs. one door" claim is something you can hit with curl.
+
 ## Temptation
 
 Imagine three services — call them Service A, Service B, and Service C. (This is a deliberately simplified 
