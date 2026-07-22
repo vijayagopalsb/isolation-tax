@@ -82,11 +82,41 @@ Not "always," not "never." A concrete way to decide:
 - the boundary is also a trust or compliance boundary (different auth requirements, different data sensitivity, an audit trail is a real requirement, not a nice-to-have)
 - the calls are low-frequency or not latency-sensitive
 - the number of potential lateral relationships is large enough that an explicit contract is genuinely cheaper than tracking implicit ones
-  **Skip it, or relax it, when:**
+
+**Skip it, or relax it, when:**
 
 - the calling pattern is a hot path where the added hop shows up in your actual latency budget
 - the two sides are deployed and owned together, so the "isolation" buys governance you don't need
 - the boundary would need business-specific logic to do the routing, not just auth/logging — that's a sign the boundary is artificial
+
+![Lateral Isolation Benefits VS Tax](images/lateral-isolation-benefits-vs-tax.png)
+
+### 🟢 Enforce lateral isolation (high benefit, low tax)
+
+> **Enforce it when:**
+> - The boundary acts as a strict trust or compliance boundary where audit trails are mandatory.
+> - The calls are low-frequency and not sensitive to latency.
+> - The number of potential relationships makes an explicit contract cheaper than tracking implicit ones.
+
+| Diagram label | Article bullet |
+|---|---|
+| Compliance / audit boundary | "The boundary acts as a strict trust or compliance boundary where audit trails are mandatory." |
+| Low-frequency, non-latency calls | "The calls are low-frequency and not sensitive to latency." |
+
+### 🟠 Skip it (low benefit, high tax)
+
+> **Skip it when:**
+> - The interaction sits on a latency-sensitive hot path.
+> - The communicating services are deployed and owned together.
+> - The shared boundary would require business-specific logic to route the request, signaling that the boundary might be artificial.
+
+| Diagram label | Article bullet |
+|---|---|
+| Hot-path, latency-sensitive call | "The interaction sits on a latency-sensitive hot path." |
+| Same-team, tightly coupled services | "The communicating services are deployed and owned together." |
+
+### Note
+The article lists a third bullet in each group — "number of potential relationships" (enforce) and "business-specific routing logic" (skip) — which aren't plotted as separate dots, since they describe *conditions for judging* a boundary rather than standalone scenarios like the other four. Happy to add them as two more points if you'd like all six bullets represented.
 
 ## Verdict
 
