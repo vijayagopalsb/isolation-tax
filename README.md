@@ -47,6 +47,9 @@ This isn't a new idea, and it's worth naming its ancestors up front rather than 
 
 None of that is a criticism of the rule. It's context. A reader who knows these patterns will recognize the shape immediately, and pretending otherwise is the fastest way to lose their trust.
 
+There's also a direct object-level ancestor — see [Law of Demeter → Lateral Isolation](docs/law-of-demeter.md) for the full comparison.
+
+
 ## What you buy
 
 The payoff is real, and it's the reason this discipline keeps getting reinvented under different names:
