@@ -2,7 +2,7 @@
 
 [Back to README](../README.md)
 
-The patterns named in the main README — Facade, Mediator, API Gateway, ESB — are
+The patterns named in the main README — Facade, Mediator, API Gateway, ESB (Enterprise Service Bus) — are
 the service-level ancestors of Lateral Isolation. There's an older, smaller-scale
 one worth naming too, because it's the same principle at a different granularity —
 not a distant cousin, but a direct one.
