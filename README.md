@@ -118,8 +118,16 @@ Not "always," not "never." A concrete way to decide:
 | Hot-path, latency-sensitive call | "The interaction sits on a latency-sensitive hot path." |
 | Same-team, tightly coupled services | "The communicating services are deployed and owned together." |
 
+
 ### Note
 The article lists a third bullet in each group — "number of potential relationships" (enforce) and "business-specific routing logic" (skip) — which aren't plotted as separate dots, since they describe *conditions for judging* a boundary rather than standalone scenarios like the other four. Happy to add them as two more points if you'd like all six bullets represented.
+
+## Try it yourself
+
+[#try-it-yourself](#try-it-yourself)
+
+See [`demo-facade-vs-isolation/`](demo-facade-vs-isolation/) for a runnable Spring Boot demo comparing all three approaches side by side — direct calls, an unenforced Facade, and a Facade enforced as a real Lateral Isolation boundary — with an ArchUnit test that structurally proves the isolation holds rather than just claiming it.
+
 
 ## Verdict
 
