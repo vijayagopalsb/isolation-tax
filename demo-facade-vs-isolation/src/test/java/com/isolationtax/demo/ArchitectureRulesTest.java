@@ -1,4 +1,4 @@
-1package com.isolationtax.demo;
+package com.isolationtax.demo;
 
 import com.tngtech.archunit.core.importer.ClassFileImporter;
 import com.tngtech.archunit.lang.ArchRule;
