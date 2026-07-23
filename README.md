@@ -3,13 +3,8 @@ A discipline for deciding when to enforce lateral isolation between peer service
 
 ![Header illustration](images/illustration.png)
 
-> **Want to see the shape of this, not just read about it?** [`demo-app/`](demo-app/) is a small
-> Spring Boot project that runs the "Dependency Sprawl" example below both ways — `OrderService`
-> calling every peer directly vs. routed through a single `ServiceGateway` — and returns the
-> resulting call graph as JSON so the "N vs. one door" claim is something you can hit with curl.
-> **Want the rule enforced, not just demonstrated?** [`demo-archunit/`](demo-archunit/) is a second,
-> smaller companion: Service A, Service B, and Service C, isolated the way the article describes,
-> with an ArchUnit test that fails the build the moment any two of them depend on each other directly.
+> **Want to see the shape of this, not just read about it?** Three runnable demos are in
+> [Try it yourself](#try-it-yourself) below.
 
 ## Temptation
 
@@ -124,9 +119,11 @@ The article lists a third bullet in each group — "number of potential relation
 
 ## Try it yourself
 
-[#try-it-yourself](#try-it-yourself)
+Three runnable demos, each showing a different angle of the same discipline:
 
-See [`demo-facade-vs-isolation/`](demo-facade-vs-isolation/) for a runnable Spring Boot demo comparing all three approaches side by side — direct calls, an unenforced Facade, and a Facade enforced as a real Lateral Isolation boundary — with an ArchUnit test that structurally proves the isolation holds rather than just claiming it.
+- [`demo-app/`](demo-app/) — a small Spring Boot project that runs the "Dependency Sprawl" example above both ways — `OrderService` calling every peer directly vs. routed through a single `ServiceGateway` — and returns the resulting call graph as JSON so the "N vs. one door" claim is something you can hit with curl.
+- [`demo-archunit/`](demo-archunit/) — Service A, Service B, and Service C, isolated the way the article describes, with an ArchUnit test that fails the build the moment any two of them depend on each other directly.
+- [`demo-facade-vs-isolation/`](demo-facade-vs-isolation/) — direct calls, an unenforced Facade, and a Facade enforced as a real Lateral Isolation boundary, compared side by side, with an ArchUnit test that structurally proves the isolation holds rather than just claiming it.
 
 
 ## Verdict
