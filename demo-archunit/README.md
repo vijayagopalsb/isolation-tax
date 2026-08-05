@@ -21,26 +21,3 @@ reach into each other directly.
 
 ```bash
 mvn test
-```
-
-> **Note:** `pom.xml` sets `forkCount=0` for tests. This works around a known Windows issue
-> where Maven's test process can report `BUILD FAILURE` right after all tests already passed,
-> because of a broken communication channel — not a real test failure. Running tests in the
-> same process instead of a separate one avoids it entirely.
-
-## See it catch a real violation
-
-1. Open `ServiceA.java`.
-2. Add `import com.isolationtax.demo.services.c.ServiceC;` and reference
-   it anywhere in the class body.
-3. Run `mvn test` again — `ServiceIsolationTest` fails, naming both
-   services.
-4. Revert the change. It passes again.
-
-## How this differs from demo-app
-
-`demo-app` proves the *behavior* — fewer direct dependencies, a smaller
-call graph, visible over HTTP. This proves the *rule itself stays
-enforced* — nobody can accidentally reintroduce a direct dependency
-without the build telling them immediately, without needing to remember
-to call an endpoint and check.

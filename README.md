@@ -127,6 +127,13 @@ Three runnable demos, each showing a different angle of the same discipline:
 - [`demo-archunit/`](demo-archunit/) — Service A, Service B, and Service C, isolated the way the article describes, with an ArchUnit test that fails the build the moment any two of them depend on each other directly.
 - [`demo-facade-vs-isolation/`](demo-facade-vs-isolation/) — direct calls, an unenforced Facade, and a Facade enforced as a real Lateral Isolation boundary, compared side by side, with an ArchUnit test that structurally proves the isolation holds rather than just claiming it.
 
+## CI Enforcement in Action
+
+When a developer adds a direct peer-to-peer dependency, the pipeline fails immediately:
+
+![CI Failure — ArchUnit detected forbidden ServiceA→ServiceC coupling](images/ci-failure.png)
+
+The ArchUnit rule catches the violation at build time — before code review, before merge, before deployment.
 
 ## Verdict
 
