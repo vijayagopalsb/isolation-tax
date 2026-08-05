@@ -1,7 +1,5 @@
 # isolation-tax
 
-# isolation-tax
-
 ![CI](https://github.com/vijayagopalsb/isolation-tax/actions/workflows/ci.yml/badge.svg)
 A discipline for deciding when to enforce lateral isolation between peer services — with runnable code and an ArchUnit test proving it.
 
