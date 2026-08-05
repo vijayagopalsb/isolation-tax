@@ -1,0 +1,40 @@
+name: CI — Lateral Isolation Enforcement
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Build & Test demo-app
+        run: |
+          cd demo-app
+          mvn test -B
+        shell: bash
+
+      - name: Build & Test demo-archunit
+        run: |
+          cd demo-archunit
+          mvn test -B
+        shell: bash
+
+      - name: Build & Test demo-facade-vs-isolation
+        run: |
+          cd demo-facade-vs-isolation
+          mvn test -B
+        shell: bash
