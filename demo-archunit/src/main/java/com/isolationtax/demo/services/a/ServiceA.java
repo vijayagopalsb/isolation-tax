@@ -10,7 +10,7 @@ import com.isolationtax.demo.services.c.ServiceC;
 class ServiceA implements ServiceEndpoint {
 
     // Violation test
-    ServiceC serviceC;
+    private ServiceC forbiddenDirectCall = new ServiceC();
 
     @Override
     public String serviceId() {
