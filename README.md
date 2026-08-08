@@ -127,6 +127,26 @@ Three runnable demos, each showing a different angle of the same discipline:
 - [`demo-archunit/`](demo-archunit/) — Service A, Service B, and Service C, isolated the way the article describes, with an ArchUnit test that fails the build the moment any two of them depend on each other directly.
 - [`demo-facade-vs-isolation/`](demo-facade-vs-isolation/) — direct calls, an unenforced Facade, and a Facade enforced as a real Lateral Isolation boundary, compared side by side, with an ArchUnit test that structurally proves the isolation holds rather than just claiming it.
 
+### Prerequisites
+- Java 17+
+- Maven 3.9+
+
+### Running the demos
+
+```bash
+# 1. Dependency Sprawl example
+cd demo-app
+./mvnw spring-boot:run
+curl http://localhost:8080/orders/1
+
+# 2. ArchUnit isolation test
+cd demo-archunit
+./mvnw test
+
+# 3. Facade vs Isolation comparison
+cd demo-facade-vs-isolation
+./mvnw test
+```
 ## CI Enforcement in Action
 
 When a developer adds a direct peer-to-peer dependency, the pipeline fails immediately:
