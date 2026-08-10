@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-aop-enforcer/demo-aop-enforcer.iml" filepath="$PROJECT_DIR$/demo-aop-enforcer/demo-aop-enforcer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/isolation-tax.iml" filepath="$PROJECT_DIR$/.idea/isolation-tax.iml" />
     </modules>
   </component>
