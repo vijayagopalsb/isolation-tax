@@ -3,7 +3,7 @@ package com.isolationtax.example;
 import org.springframework.stereotype.Service;
 
 @Service
-class MathService {
+public class MathService {
     
     public int add(int a, int b) { 
         return a + b; 
