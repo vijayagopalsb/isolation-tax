@@ -232,4 +232,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 [^2]: Chris Richardson, "Pattern: API Gateway / Backends for Frontends,"
 microservices.io, https://microservices.io/patterns/apigateway.html
-
