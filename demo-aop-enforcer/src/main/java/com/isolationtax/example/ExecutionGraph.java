@@ -20,8 +20,10 @@ public class ExecutionGraph {
         
         if (!expectedMethod.equals(methodName)) {
             // The Fail-Fast Circuit Breaker
-            throw new IllegalStateException("Lateral Isolation Violation! Expected '" 
-                + expectedMethod + "' but got '" + methodName + "'");
+           // throw new IllegalStateException("Lateral Isolation Violation! Expected '"
+               // + expectedMethod + "' but got '" + methodName + "'");
+            throw new IllegalStateException("TemporalSequenceViolation: Invalid execution sequence. " +
+                    "Operations must follow add() -> subtract() -> multiply() -> divide().");
         }
         
         // Move to the next step in the graph
