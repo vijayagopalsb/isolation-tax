@@ -176,11 +176,10 @@ Runnable demos showcasing different angles of the discipline:
 - [`demo-facade-vs-isolation/`](demo-facade-vs-isolation/) — direct calls, an unenforced Facade, and a Facade enforced
   as a real Lateral Isolation boundary, compared side by side, with an ArchUnit test that structurally proves the
   isolation holds rather than just claiming it.
-- [`demo-aop-enforcer/`](demo-aop-enforcer/) — a standalone Spring Boot application demonstrating active **Runtime State
-  Machine & AOP Enforcement**. It uses a runtime execution graph (`ExecutionGraph.java`) and an AspectJ interceptor (
-  `IsolationInterceptor.java`) to structurally guarantee a strict sequence (`add()` → `subtract()` → `multiply()` →
-  `divide()`), throwing a fatal "Lateral Isolation Violation" error instantly if a caller attempts to bypass the
-  sequence.
+- [`demo-aop-enforcer/`](demo-aop-enforcer/) — an optional companion module exploring **Runtime Temporal Sequencing**.
+  It uses AspectJ and a finite state machine (`ExecutionGraph.java`, `IsolationInterceptor.java`) to enforce an
+  order of operations (`add()` → `subtract()` → `multiply()` → `divide()`) at runtime, throwing a fatal
+  `TemporalSequenceViolation` error if a caller attempts to execute methods out of sequence.
 
 ### Prerequisites
 
