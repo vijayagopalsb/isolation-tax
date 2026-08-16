@@ -85,6 +85,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/Community-Contribution/repository/demo-microservices-proof/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "to.speed.mode.migration.done": "true"
   }
@@ -188,5 +192,16 @@
     <MESSAGE value="Feat: Add Spring AOP runtime enforcement example" />
     <MESSAGE value="docs: add standalone Spring AOP enforcer module details to README" />
     <option name="LAST_COMMIT_MESSAGE" value="docs: add standalone Spring AOP enforcer module details to README" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../demo-microservices-proof/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

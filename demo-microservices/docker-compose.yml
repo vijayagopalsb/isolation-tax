@@ -1,0 +1,56 @@
+version: '3.9'
+
+services:
+  service-a:
+    build:
+      context: .
+      dockerfile: service-a/Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  service-b:
+    build:
+      context: .
+      dockerfile: service-b/Dockerfile
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  service-c:
+    build:
+      context: .
+      dockerfile: service-c/Dockerfile
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  service-d:
+    build:
+      context: .
+      dockerfile: service-d/Dockerfile
+    ports:
+      - "8084:8084"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  gateway-service:
+    build:
+      context: .
+      dockerfile: gateway-service/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - GATEWAY_SERVICES_SERVICE_A=http://service-a:8081
+      - GATEWAY_SERVICES_SERVICE_B=http://service-b:8082
+      - GATEWAY_SERVICES_SERVICE_C=http://service-c:8083
+      - GATEWAY_SERVICES_SERVICE_D=http://service-d:8084
+    depends_on:
+      - service-a
+      - service-b
+      - service-c
+      - service-d
