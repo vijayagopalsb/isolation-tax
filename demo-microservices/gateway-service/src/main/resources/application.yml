@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+gateway:
+  services:
+    service-a: http://localhost:8081
+    service-b: http://localhost:8082
+    service-c: http://localhost:8083
+    service-d: http://localhost:8084
+
+logging:
+  level:
+    com.isolation.gateway: DEBUG

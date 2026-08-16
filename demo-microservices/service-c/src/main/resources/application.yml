@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: service-c
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
