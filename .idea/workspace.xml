@@ -5,53 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6377857a-8d4a-454f-aba9-df52d3b5c7ef" name="Changes" comment="docs: add standalone Spring AOP enforcer module details to README">
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/archunit-tests/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/archunit-tests/src/test/java/com/isolation/archunit/ArchitectureRulesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/DemoRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/HttpMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/RetryPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/ServiceId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/Step.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/StepCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/Workflow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java/com/isolation/dsl/WorkflowDsl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/test/java/com/isolation/dsl/WorkflowDslTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java/com/isolation/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java/com/isolation/gateway/controller/WorkflowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java/com/isolation/gateway/dto/RetryPolicyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java/com/isolation/gateway/dto/StepRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java/com/isolation/gateway/dto/WorkflowRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java/com/isolation/gateway/service/WorkflowExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-a/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-a/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-a/src/main/java/com/isolation/servicea/ServiceAApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-a/src/main/java/com/isolation/servicea/controller/ServiceAController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-a/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-b/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-b/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-b/src/main/java/com/isolation/serviceb/ServiceBApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-b/src/main/java/com/isolation/serviceb/controller/ServiceBController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-b/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-c/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-c/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-c/src/main/java/com/isolation/servicec/ServiceCApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-c/src/main/java/com/isolation/servicec/controller/ServiceCController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-c/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-d/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-d/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-d/src/main/java/com/isolation/serviced/ServiceDApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-d/src/main/java/com/isolation/serviced/controller/ServiceDController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ demo-microservices-proof/service-d/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AUTHOR.md" beforeDir="false" afterPath="$PROJECT_DIR$/AUTHOR.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +69,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Maven. [test].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -126,7 +84,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Community-Contribution/repository/isolation-tax/ demo-microservices-proof",
+    "last_opened_file_path": "D:/Community-Contribution/repository/isolation-tax",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,11 +96,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Community-Contribution\repository\isolation-tax" />
       <recent name="D:\Community-Contribution\repository\isolation-tax\ demo-microservices-proof" />
       <recent name="D:\Community-Contribution\repository\isolation-tax\docs" />
       <recent name="D:\Community-Contribution\repository\isolation-tax\demo-facade-vs-isolation" />
       <recent name="D:\Community-Contribution\repository\isolation-tax\images" />
-      <recent name="D:\Community-Contribution\repository\isolation-tax" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Community-Contribution\repository\isolation-tax\images" />
