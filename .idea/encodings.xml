@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/archunit-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/dsl-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/service-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/service-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/service-c/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/service-d/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ demo-microservices-proof/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
