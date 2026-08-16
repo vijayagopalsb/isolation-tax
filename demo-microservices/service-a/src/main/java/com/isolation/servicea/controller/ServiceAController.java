@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-//import com.isolation.serviceb.ServiceBApplication;
+import com.isolation.serviceb.ServiceBApplication;
 
 @Slf4j
 @RestController
@@ -14,7 +14,7 @@ import java.util.Map;
 public class ServiceAController {
 
     // This creates a real compiled dependency on ServiceBApplication
-    //private final ServiceBApplication serviceBApplication = new ServiceBApplication();
+    private final ServiceBApplication serviceBApplication = new ServiceBApplication();
 
     @GetMapping("/resource/{id}")
     public ResponseEntity<Map<String, Object>> getResource(@PathVariable String id) {
