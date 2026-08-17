@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.isolation</groupId>
-    <artifactId>lateral-isolation-microservices-proof</artifactId>
+    <artifactId>lateral-isolation-microservices</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
