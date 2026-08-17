@@ -194,6 +194,8 @@ cd demo-app
 ./mvnw spring-boot:run
 curl http://localhost:8080/orders/1
 
+````
+```bash
 # 2. ArchUnit isolation test
 cd demo-archunit
 ./mvnw test
