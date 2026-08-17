@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6377857a-8d4a-454f-aba9-df52d3b5c7ef" name="Changes" comment="docs: add standalone Spring AOP enforcer module details to README">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-microservices/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-microservices/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6377857a-8d4a-454f-aba9-df52d3b5c7ef" name="Changes" comment="docs: add standalone Spring AOP enforcer module details to README" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
