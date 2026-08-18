@@ -1,7 +1,5 @@
 # isolation-tax
 
-# isolation-tax
-
 [![CI](https://github.com/vijayagopalsb/isolation-tax/actions/workflows/ci.yml/badge.svg)](https://github.com/vijayagopalsb/isolation-tax/actions)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/vijayagopalsb/isolation-tax/ci.yml?branch=main)](https://github.com/vijayagopalsb/isolation-tax/actions)
 [![Latest Release](https://img.shields.io/github/v/release/vijayagopalsb/isolation-tax)](https://github.com/vijayagopalsb/isolation-tax/releases)
