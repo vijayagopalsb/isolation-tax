@@ -2,6 +2,15 @@
 
 ![CI](https://github.com/vijayagopalsb/isolation-tax/actions/workflows/ci.yml/badge.svg)
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/your-org/lateral-isolation/ci.yml?branch=main)](https://github.com/your-org/lateral-isolation/actions)
+
+[![Latest Release](https://img.shields.io/github/v/release/your-org/lateral-isolation)](https://github.com/your-org/lateral-isolation/releases)
+
+[![License](https://img.shields.io/github/license/your-org/lateral-isolation)](LICENSE)
+
+![Contributors](https://img.shields.io/github/contributors/your-org/lateral-isolation)](https://github.com/your-org/lateral-isolation/graphs/contributors)
+
+
 A discipline for deciding when to enforce lateral isolation between peer services — with runnable code and an ArchUnit
 test proving it.
 
