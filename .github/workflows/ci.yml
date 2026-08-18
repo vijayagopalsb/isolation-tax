@@ -63,17 +63,21 @@ jobs:
           java-version: "17"
           cache: maven
 
-      # Build and install all modules defined in parent pom.xml
+      # Build and install all modules defined in demo-microservices/pom.xml
       - name: Build all modules
+        working-directory: demo-microservices
         run: mvn -B clean install
 
       # Run ArchUnit enforcement tests
       - name: Run ArchUnit enforcement tests
+        working-directory: demo-microservices
         run: mvn -B test -pl archunit-tests
 
       # Optional: Build Docker images
       - name: Build Docker images
+        working-directory: demo-microservices
         run: docker-compose build
+
 
 
 
