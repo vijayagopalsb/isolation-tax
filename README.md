@@ -211,7 +211,7 @@ cd demo-aop-enforcer
 mvn spring-boot:run
 ```
 ```bash
-# Complete Microservices Demo
+# 5. Complete Microservices Demo
 For a full‑scale microservices proof with:
 * 7 modules (4 services + 3 supporting)
 * Lateral isolation enforcement
@@ -220,7 +220,7 @@ For a full‑scale microservices proof with:
 * GitHub Actions CI
 * Build‑time ArchUnit tests
 ```
-
+For detailed instructions, see the **[demo-microservices/README.md](./demo-microservices/README.md)** guide.
 ### Summary
 
 | **What** | **Where** | **Code** |

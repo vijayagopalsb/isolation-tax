@@ -37,7 +37,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--For intentional violation-->
+        <!--For intentional violation uncomment the following-->
         <dependency>
             <groupId>com.isolation</groupId>
             <artifactId>service-b</artifactId>
