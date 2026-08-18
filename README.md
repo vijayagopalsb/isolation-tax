@@ -229,8 +229,6 @@ For a full‑scale microservices proof with:
 | **Full microservices guide** | `demo-microservices/README.md` | All detailed instructions |
 
 
-
-
 ## CI Enforcement in Action
 
 When a developer adds a direct peer-to-peer dependency, the pipeline fails immediately:
