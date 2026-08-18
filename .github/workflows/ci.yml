@@ -48,3 +48,26 @@ jobs:
       - name: Build and test
         working-directory: demo-facade-vs-isolation
         run: mvn -B verify
+
+  # ============================================================
+  # demo-microservices — The Lateral Isolation Proof
+  # ============================================================
+  demo-microservices:
+    name: demo-microservices (Java 17)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - name: Build all modules
+        working-directory: demo-microservices
+        run: mvn -B clean compile
+      - name: Run ArchUnit enforcement tests
+        working-directory: demo-microservices
+        run: mvn -B test -pl archunit-tests
+      - name: Build Docker images (optional)
+        working-directory: demo-microservices
+        run: docker-compose build
