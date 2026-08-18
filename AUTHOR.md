@@ -37,7 +37,6 @@ Vijayagopal Sivasankara Pillai
 Email: vijayagopal.sb@gmail.com
 
 [![GitHub](https://img.shields.io/badge/GitHub-isolation--tax-blue?logo=github)](https://github.com/vijayagopalsb/isolation-tax)
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vijayagopal-blue?logo=linkedin)](https://www.linkedin.com/in/vijayagopal-sb/)
 
 
