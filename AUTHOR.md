@@ -29,14 +29,18 @@ It addresses:
 
 ---
 
-## Contact
+## Contacts
 
 ---
 Vijayagopal Sivasankara Pillai
 
+Email: vijayagopal.sb@gmail.com
+
 [![GitHub](https://img.shields.io/badge/GitHub-isolation--tax-blue?logo=github)](https://github.com/vijayagopalsb/isolation-tax)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/your-linkedin-id/)
-[![Email](https://img.shields.io/badge/Email-Contact-blue?logo=gmail)](mailto:vijayagopal.sb@gmail.com)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vijayagopal-blue?logo=linkedin)](https://www.linkedin.com/in/vijayagopal-sb/)
+
+
 
 
 ---
