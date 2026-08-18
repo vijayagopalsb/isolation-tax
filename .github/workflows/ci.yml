@@ -50,10 +50,10 @@ jobs:
         run: mvn -B verify
 
   # ============================================================
-  # 🚨 demo-microservices — The Lateral Isolation Proof
+  # demo-microservices — The Lateral Isolation Proof
   # ============================================================
   demo-microservices:
-    name: 🚨 demo-microservices (Java 17)
+    name: demo-microservices (Java 17)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
