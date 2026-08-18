@@ -229,12 +229,6 @@ For a full‑scale microservices proof with:
 | **Full microservices guide** | `demo-microservices/README.md` | All detailed instructions |
 
 
-### Also Add a Link Back (Optional but Nice)
-
-In your `demo-microservices/README.md`, add this at the top:
-
-[← Back to Main README](../README.md)
-
 ## CI Enforcement in Action
 
 When a developer adds a direct peer-to-peer dependency, the pipeline fails immediately:
