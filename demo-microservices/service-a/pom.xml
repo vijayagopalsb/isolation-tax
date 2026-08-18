@@ -37,13 +37,13 @@
             <scope>test</scope>
         </dependency>
 
-        <!--For intentional violation-->
-        <dependency>
+        <!--For intentional violation uncomment the following-->
+        <!--<dependency>
             <groupId>com.isolation</groupId>
             <artifactId>service-b</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
