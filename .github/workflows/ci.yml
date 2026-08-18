@@ -76,7 +76,7 @@ jobs:
       # Optional: Build Docker images
       - name: Build Docker images
         working-directory: demo-microservices
-        run: docker-compose build
+        run: docker compose build
 
 
 
