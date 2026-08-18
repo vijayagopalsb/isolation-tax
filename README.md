@@ -199,15 +199,41 @@ curl http://localhost:8080/orders/1
 # 2. ArchUnit isolation test
 cd demo-archunit
 ./mvnw test
-
+```
+```bash 
 # 3. Facade vs Isolation comparison
 cd demo-facade-vs-isolation
 ./mvnw test
-
+```
+```bash
 # 4. Runtime AOP Enforcer example
 cd demo-aop-enforcer
 mvn spring-boot:run
 ```
+```bash
+# Complete Microservices Demo
+For a full‑scale microservices proof with:
+* 7 modules (4 services + 3 supporting)
+* Lateral isolation enforcement
+* Java DSL for execution sequencing
+* Docker containerization
+* GitHub Actions CI
+* Build‑time ArchUnit tests
+```
+
+### Summary
+
+| **What** | **Where** | **Code** |
+|----------|-----------|----------|
+| **Link to demo-microservices** | Main `README.md` | `[demo-microservices](./demo-microservices/README.md)` |
+| **Full microservices guide** | `demo-microservices/README.md` | All detailed instructions |
+
+
+### Also Add a Link Back (Optional but Nice)
+
+In your `demo-microservices/README.md`, add this at the top:
+
+[← Back to Main README](../README.md)
 
 ## CI Enforcement in Action
 
