@@ -1,14 +1,13 @@
 # isolation-tax
 
-![CI](https://github.com/vijayagopalsb/isolation-tax/actions/workflows/ci.yml/badge.svg)
+# isolation-tax
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your-org/lateral-isolation/ci.yml?branch=main)](https://github.com/your-org/lateral-isolation/actions)
+[![CI](https://github.com/vijayagopalsb/isolation-tax/actions/workflows/ci.yml/badge.svg)](https://github.com/vijayagopalsb/isolation-tax/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vijayagopalsb/isolation-tax/ci.yml?branch=main)](https://github.com/vijayagopalsb/isolation-tax/actions)
+[![Latest Release](https://img.shields.io/github/v/release/vijayagopalsb/isolation-tax)](https://github.com/vijayagopalsb/isolation-tax/releases)
+[![License](https://img.shields.io/github/license/vijayagopalsb/isolation-tax)](LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/vijayagopalsb/isolation-tax)](https://github.com/vijayagopalsb/isolation-tax/graphs/contributors)
 
-[![Latest Release](https://img.shields.io/github/v/release/your-org/lateral-isolation)](https://github.com/your-org/lateral-isolation/releases)
-
-[![License](https://img.shields.io/github/license/your-org/lateral-isolation)](LICENSE)
-
-![Contributors](https://img.shields.io/github/contributors/your-org/lateral-isolation)](https://github.com/your-org/lateral-isolation/graphs/contributors)
 
 
 A discipline for deciding when to enforce lateral isolation between peer services — with runnable code and an ArchUnit
