@@ -3,10 +3,10 @@ NOTICE
 
 Copyright © 2026 Vijayagopal Sivasankara Pillai
 
-**Repository:** [https://github.com/vijayagopalsb/isolation-tax](https://github.com/vijayagopalsb/isolation-tax)
+**Repository:** https://github.com/vijayagopalsb/isolation-tax
 
 INTELLECTUAL PROPERTY NOTICE
----------------------------
+----------------------------
 
 The conceptual framework presented in this repository is original work:
 
@@ -30,11 +30,17 @@ Contact: vijayagopal.sb@gmail.com
 
 CODE LICENSE
 ------------
-All code in this repository is licensed under the MIT License (see LICENSE file).
+
+All source code in this repository is licensed under the MIT License (see LICENSE file).
+
+The use of third‑party libraries (e.g., ArchUnit, Spring Framework) is subject to their respective
+licenses (e.g., Apache‑2.0). This project does not claim ownership over those libraries.
 
 CONCEPT LICENSE
 ---------------
-The conceptual framework, methodology, and decision criteria are protected intellectual property.
+
+The conceptual framework, methodology, and decision criteria presented in this repository are protected
+intellectual property of Vijayagopal Sivasankara Pillai.
 
 Attribution is required for:
 - Academic citation
@@ -42,8 +48,9 @@ Attribution is required for:
 - Conference presentations
 - Commercial adoption or adaptation
 
-For commercial use, speaking engagements, or consulting, contact the author.
+For commercial use, speaking engagements, or consulting related to this work, please contact the author.
 
 ---
 
-This work is protected by copyright law. Unauthorized reproduction or distribution without attribution is prohibited.
+This work is protected by applicable copyright law. Unauthorized reproduction or distribution without
+appropriate attribution is prohibited.
