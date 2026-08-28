@@ -146,7 +146,7 @@ Not "always," not "never." A concrete way to decide:
 > - The number of potential relationships makes an explicit contract cheaper than tracking implicit ones.
 
 | Diagram label                    | Article bullet                                                                                 |
-|----------------------------------|------------------------------------------------------------------------------------------------|
+|----------------------------------|--------------------------------------------------------------------------------------------------|
 | Compliance / audit boundary      | "The boundary acts as a strict trust or compliance boundary where audit trails are mandatory." |
 | Low-frequency, non-latency calls | "The calls are low-frequency and not sensitive to latency."                                    |
 
@@ -159,7 +159,7 @@ Not "always," not "never." A concrete way to decide:
     artificial.
 
 | Diagram label                       | Article bullet                                                |
-|-------------------------------------|---------------------------------------------------------------|
+|--------------------------------------|-----------------------------------------------------------------|
 | Hot-path, latency-sensitive call    | "The interaction sits on a latency-sensitive hot path."       |
 | Same-team, tightly coupled services | "The communicating services are deployed and owned together." |
 
@@ -199,14 +199,13 @@ Runnable demos showcasing different angles of the discipline:
 cd demo-app
 ./mvnw spring-boot:run
 curl http://localhost:8080/orders/1
-
-````
+```
 ```bash
 # 2. ArchUnit isolation test
 cd demo-archunit
 ./mvnw test
 ```
-```bash 
+```bash
 # 3. Facade vs Isolation comparison
 cd demo-facade-vs-isolation
 ./mvnw test
@@ -216,8 +215,9 @@ cd demo-facade-vs-isolation
 cd demo-aop-enforcer
 mvn spring-boot:run
 ```
-```bash
-# 5. Complete Microservices Demo
+
+**5. Complete Microservices Demo**
+
 For a full‑scale microservices proof with:
 * 7 modules (4 services + 3 supporting)
 * Lateral isolation enforcement
@@ -225,8 +225,9 @@ For a full‑scale microservices proof with:
 * Docker containerization
 * GitHub Actions CI
 * Build‑time ArchUnit tests
-```
+
 For detailed instructions, see the **[demo-microservices/README.md](./demo-microservices/README.md)** guide.
+
 ### Summary
 
 | **What** | **Where** | **Code** |
@@ -259,5 +260,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 [^2]: Chris Richardson, "Pattern: API Gateway / Backends for Frontends,"
 microservices.io, https://microservices.io/patterns/apigateway.html
-
-
