@@ -186,6 +186,10 @@ Runnable demos showcasing different angles of the discipline:
   It uses AspectJ and a finite state machine (`ExecutionGraph.java`, `IsolationInterceptor.java`) to enforce an
   order of operations (`add()` → `subtract()` → `multiply()` → `divide()`) at runtime, throwing a fatal
   `TemporalSequenceViolation` error if a caller attempts to execute methods out of sequence.
+- [`demo-microservices/`](demo-microservices/) — the full-scale proof: four services (A–D), a `ServiceGateway`, an ArchUnit
+    enforcement suite, and a Java DSL module for execution sequencing, orchestrated with Docker Compose. The README walks
+    through introducing a real violation — a direct `ServiceA → ServiceB` dependency — and shows the ArchUnit test failing
+    with the exact stack trace, so the enforcement claim isn't just asserted, it's demonstrated end to end.
 
 ### Prerequisites
 
